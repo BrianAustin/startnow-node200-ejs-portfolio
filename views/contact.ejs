@@ -3,9 +3,15 @@
     <title>Contact Brian</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <div class="container">
+      <nav class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" href="http://localhost:8080/">Brian J. Austin</a>
+          <a class="nav-link my-2 my-sm-0" href="http://localhost:8080/contact">Contact</a>
+      </nav>
       <form action="/thanks" method="POST">
         <label for="firstName">First Name:</label>
         <input id="firstName" name="firstName" type="text">

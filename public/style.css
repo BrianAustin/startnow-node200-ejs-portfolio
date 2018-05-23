@@ -1,0 +1,20 @@
+body {
+  background: url(img/Sunset1-smaller.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  /* background: #EFEFBB; 
+  background: -webkit-linear-gradient(to left, #D4D3DD, #EFEFBB); 
+  background: linear-gradient(to left, #D4D3DD, #EFEFBB);  */
+
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Lora', serif; 
+}
+
+.navbar {
+  font-family: 'Nunito', sans-serif;
+}
+
+
