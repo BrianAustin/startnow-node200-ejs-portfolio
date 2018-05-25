@@ -8,28 +8,29 @@
   </head>
   <body>
     <div class="container">
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="http://localhost:8080/">Brian J. Austin</a>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8080/contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.linkedin.com/in/brianjayaustin/">LinkedIn</a>
-                </li>
-              </ul>
-            </div>  
-          </nav>
-
-
-
-        <div>
-            Thank you <%= contact.firstName %> <%= contact.lastName %>.
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://localhost:8080/">Brian J. Austin</a>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/brianjayaustin/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
+      <div class="card text-white text-center bg-dark border-light col-md-4 offset-md-4" id="thank-you-card">
+        <div class="card-header">Quokka says "Thank You!!"</div>
+        <img class="card-img-top rounded" src="/img/quokka-edit.jpg" alt="card image cap">
+        <div class="card-body">
+          <p class="card-text">And I say, thank you <%= contact.firstName %> <%= contact.lastName %>.</p> 
         </div>
-
-
-
+        <div class="card-footer">
+          <a href="http://localhost:8080/">Homepage</a>
+        </div>
+      </div>
 
 
 

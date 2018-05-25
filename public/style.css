@@ -17,4 +17,14 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+#jumbotron1-index {
+  margin-top: 200px;
+}
 
+#jumbotron-contact {
+  margin-top: 150px;
+}
+
+#thank-you-card {
+  margin-top: 125px;
+}

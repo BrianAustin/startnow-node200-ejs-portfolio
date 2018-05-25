@@ -21,21 +21,42 @@
               </ul>
             </div>  
           </nav>
-      <form action="/thanks" method="POST">
-        <label for="firstName">First Name:</label>
-        <input id="firstName" name="firstName" type="text">
 
-        <label for="lastName">Last Name:</label>
-        <input id="lastName" name="lastName" type="text">
+        <div class="jumbotron" id="jumbotron-contact">
+          <h1 class="display-4">Contact Me</h1>  
+          <p class="lead">Share your contact info, and I will send you a quokka pic!</p>
+          <hr class="my-4">
+          <form id="contact" name="submit-to-google-sheet" action="/thanks" method="POST">
+            <div class="form-group">
+              <label for="firstName">firstName:</label>
+              <input class="form-control" id="firstName" name="firstName" type="text">
+            </div>  
+            <div class="form-group">
+              <label for="lastName">lastName:</label>
+              <input class="form-control" id="lastName" name="lastName" type="text">
+            </div>
+            <div class="form-group"></div>
+              <label for="email">email:</label>
+              <input class="form-control" id="email" name="email" type="text">
+              <p class="form-text text-muted small">I will never share your email with anyone. Even if they ask nicely.</p>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+       
+            </form>
+        </div>
 
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text">
 
-        <input type="submit" />
-      </form>
     </div>
 
-
+    <script>  
+        const scriptURL = "https://script.google.com/macros/s/AKfycbxSzlHyJW_yIaPdBiB7Q8Z8pclQZBPSt9Y8LEjyjcTpSpuf_Y1M/exec"  
+        const form = document.forms["contact"]  
+        form.addEventListener("submit", e => { 
+         fetch(scriptURL, { method: "POST", body: new FormData(form)})  
+          .then(response => console.log("Success!", response))  
+          .catch(error => console.error("Error!", error.message))  
+        })  
+    </script> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
