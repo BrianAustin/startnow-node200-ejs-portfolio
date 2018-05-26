@@ -16,13 +16,14 @@
                 <a class="nav-link" href="http://localhost:8080/contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/brianjayaustin/">LinkedIn</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/brianjayaustin/" target="blank">LinkedIn</a>
             </li>
           </ul>
         </div>  
       </nav>
+
       <div class="card text-white text-center bg-dark border-light col-md-4 offset-md-4" id="thank-you-card">
-        <div class="card-header">Quokka says "Thank You!!"</div>
+        <div class="card-header" id="quokka-header">Quokka says "Thank You!!"</div>
         <img class="card-img-top rounded" src="/img/quokka-edit.jpg" alt="card image cap">
         <div class="card-body">
           <p class="card-text">And I say, thank you <%= contact.firstName %> <%= contact.lastName %>.</p> 

@@ -1,3 +1,5 @@
+/* index.ejs and general doc formating below */
+
 body {
   background: url(img/Sunset1-smaller.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -10,21 +12,69 @@ body {
   background: linear-gradient(to left, #D4D3DD, #EFEFBB);  */
 
   /* font-family: 'Nunito', sans-serif; */
-  font-family: 'Lora', serif; 
+  /* font-family: 'Lora', serif; */
+  /* Font-Family: 'Permanent Marker', Cursive; */
+  Font-Family: 'Overpass', Sans-Serif;
+  font-size: 62.5%; 
 }
 
 .navbar {
-  font-family: 'Nunito', sans-serif;
+  font-size: 1.8em;
+  opacity: 0.8;
+}
+
+#title-name {
+  margin-top: 235px;
+  font-size: 8em;
+  Font-Family: 'Permanent Marker', Cursive;
+  text-shadow: 2px 2px 9px #000000;
+}
+
+#title-sub {
+  font-size: 1.8em;
+  text-shadow: 2px 2px 8px #000000;
+
 }
 
 #jumbotron1-index {
-  margin-top: 200px;
+  margin-top: 370px;
 }
 
-#jumbotron-contact {
-  margin-top: 150px;
+.bio {
+  font-size: 1.5em;
 }
+
+a.link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* contact.ejs below */
+
+#jumbotron-contact {
+  margin-top: 130px;
+  opacity: 0.9;
+}
+
+.label-contact {
+  font-size: 1.4em;
+}
+
+.fine-print{
+  font-size: 1em;
+}
+
+/* thanks.ejs below */
 
 #thank-you-card {
   margin-top: 125px;
+  font-size: 1.3em;
 }
+
+#quokka-header {
+  Font-Family: 'Permanent Marker', Cursive;
+  font-size: 1.6em;
+}
+
