@@ -50,6 +50,9 @@ a.link {
   text-decoration: none;
 }
 
+.logo-margin {
+  padding: 2%;
+}
 
 /* contact.ejs below */
 
