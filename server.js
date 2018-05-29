@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
     }
   }
   res.render('index', data);
+  res.status(200);
 });
 
 app.get('/contact', (req, res) => {
@@ -40,3 +41,5 @@ app.post('/thanks', (req, res) => {
 app.listen(process.env.PORT || 8080, () => {
   console.log('listening at http://localhost:8080');
 });
+
+module.exports = app;
