@@ -54,6 +54,16 @@ a.link {
   padding: 2%;
 }
 
+.portfolio-text {
+  font-size: 1.8em;
+}
+
+.app-pics {
+  max-height: 97%;
+  max-width: 97%;
+  padding: 2%
+}
+
 /* contact.ejs below */
 
 #jumbotron-contact {
